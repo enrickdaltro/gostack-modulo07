@@ -47,9 +47,11 @@ export default function Cart() {
               <strong>R$129,90</strong>
             </td>
             <td>
-              <button type="button">
-                <MdDelete size={20} color="#7159c1" />
-              </button>
+              <div>
+                <button type="button">
+                  <MdDelete size={20} color="#7159c1" />
+                </button>
+              </div>
             </td>
           </tr>
         </tbody>
