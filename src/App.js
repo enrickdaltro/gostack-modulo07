@@ -8,6 +8,8 @@ import Header from './components/Header/index';
 
 import Routes from './routes';
 
+import './config/ReactotronConfig';
+
 import store from './store/index';
 
 // import { Container } from './styles';
