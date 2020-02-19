@@ -1,5 +1,5 @@
 import React from 'react';
-import {BrowserRouter} from 'react-router-dom';
+import {Router} from 'react-router-dom';
 import {Provider} from 'react-redux';
 import {ToastContainer} from 'react-toastify';
 
@@ -11,6 +11,7 @@ import Routes from './routes';
 
 import './config/ReactotronConfig';
 
+import history from './services/history';
 import store from './store/index';
 
 // import { Container } from './styles';
@@ -18,12 +19,12 @@ import store from './store/index';
 export default function App() {
   return (
     <Provider store={store}>
-      <BrowserRouter>
+      <Router history={history}>
         <Header />
         <Routes />
         <GlobalStyles />
         <ToastContainer autoClose={2500} />
-      </BrowserRouter>
+      </Router>
     </Provider>
   );
 }
